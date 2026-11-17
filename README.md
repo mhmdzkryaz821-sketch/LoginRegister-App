@@ -58,5 +58,10 @@ docker rmi login-register-app
 Users are stored inside the container, so registered accounts are lost when
 the container is removed.
 
+## Bonus Features
+- **Docker Compose:** `docker compose up -d --build` to start, `docker compose down` to stop.
+- **Makefile:** `make build`, `make run`, `make stop`.
+- **Healthcheck:** the Dockerfile checks `login.php` every 30 seconds; `docker ps` shows `healthy`.
+
 ## Attribution
 This project was written from scratch for the OS Lab course.
