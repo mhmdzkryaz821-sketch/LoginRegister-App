@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: login-register-app
+    container_name: my-login-container
+    ports:
+      - "8080:80"
+    restart: unless-stopped
